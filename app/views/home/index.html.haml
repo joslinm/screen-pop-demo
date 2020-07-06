@@ -1,0 +1,15 @@
+%h1 Screen Pop Demo
+
+%div
+  %span Websocket Status: 
+  %span#websocket-status Offline
+%hr
+%p 
+  %span
+    By clicking the button below, you'll generate a new 'Event' record in the database
+    When an event is created, Rails invokes "after-create" callbacks. One of these callbacks
+    publishes the event to the 'events' channel which the client js is subscribed to
+
+%button#new-event-btn Click me!
+
+
